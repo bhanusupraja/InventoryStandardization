@@ -1,18 +1,13 @@
 # InventoryStandardization
 
 Step 1: Create a Gemini api key from the this website
-Step 2: Add the generated key to the .env file
-GEMINI_API_KEY = ""
+Step 2: Add the generated key to the .env file GEMINI_API_KEY = ""
 Step 3: open terminal go agents path and create a virtual venv and activate it 
 Step 4: run the command below
 pip install -r requirements.txt
 Step 5: run the command below to start the agent
 python inputProcessing.py file then you could see the outputs in the data folder
 
-## Detailed version
-Here’s a **detailed,  **InventoryStandardization** project — it explains setup, configuration, agent roles, and expected outputs clearly 👇
-
----
 
 # 🧠 InventoryStandardization
 
@@ -40,11 +35,11 @@ The complete pipeline includes the following agents:
 
 | Agent                                   | Purpose                                                                              | Type              |
 | --------------------------------------- | ------------------------------------------------------------------------------------ | ----------------- |
-| 🧹 **InputProcessingAgent**             | Cleans & extracts necessary fields from raw CSVs (e.g. Brand, Category, Description) | Non-AI / Hybrid   |
+| 🧹 **InputProcessingAgent**             | Cleans & extracts necessary fields from raw CSVs (e.g. Brand, Category, Description) | AI agent   |
 | 🧠 **ConfidenceSKUAgent**               | Generates standardized SKUs & assigns confidence scores (row + column level)         | AI-assisted       |
 | 🔍 **MappingEngineAgent**               | Classifies data into known internal schemas & identifies missing/ambiguous fields    | ML Classifier     |
 | 👤 **HITL Review Agent**                | Routes low-confidence mappings (< threshold) to a review interface                   | Human-in-the-Loop |
-| 📊 **AuditReportingAgent** *(optional)* | Aggregates logs, generates audit reports for QA                                      | Non-AI            |
+| 📊 **StatisticsAgent** *(optional)* | Aggregates logs, generates audit reports for QA                                      | AI            |
 
 ---
 
