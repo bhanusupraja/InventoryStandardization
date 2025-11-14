@@ -1,14 +1,3 @@
-# InventoryStandardization
-
-Step 1: Create a Gemini api key from the this website
-Step 2: Add the generated key to the .env file GEMINI_API_KEY = ""
-Step 3: open terminal go agents path and create a virtual venv and activate it 
-Step 4: run the command below
-pip install -r requirements.txt
-Step 5: run the command below to start the agent
-python inputProcessing.py file then you could see the outputs in the data folder
-
-
 # 🧠 InventoryStandardization
 
 A modular AI-powered pipeline designed to **standardize, clean, and generate structured product data (SKUs, confidence scores, mappings)** from raw multi-category inventory files such as Jewelry, Textiles, Electronics, and more.
